@@ -11,13 +11,13 @@ import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.permissions.Permission;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class UniFly extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin implements Listener {
 	private List enabledWorlds = new ArrayList();
 	private List flyCommands = new ArrayList();
 	private String flyNotAllowed = "";
 	private Permission bypassPermission = new Permission("unifly.bypass");
 
-	public UniFly() {
+	public Main() {
 		super();
 	}
 
