@@ -25,12 +25,12 @@ public class Main extends JavaPlugin implements Listener {
 		this.loadConfig();
 		this.getServer().getPluginManager().addPermission(this.bypassPermission);
 		this.getServer().getPluginManager().registerEvents(this, this);
-		Bukkit.getServer().getLogger().info("[DPT.MC] UniFly Enabled");
+		this.getServer().getLogger().info("[UniFly] Plugin Enabled");
 	}
 
 	public void onDisable() {
 		this.getServer().getPluginManager().removePermission(this.bypassPermission);
-		Bukkit.getServer().getLogger().info("[DPT.MC] UniFly Disabled");
+		this.getServer().getLogger().info("[UniFly] Plugin Disabled");
 	}
 
 	public void loadConfig() {
